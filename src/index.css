@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --semantic-xl: 24px;
+  --semantic-md: 16px;
+  --semantic-xs: 8px;
+  --absolute-3: 12px;
+  --absolute-15: 6px;
+}
+
+body {
+  background-color: rgb(242, 244, 247);
+  color: rgb(16, 24, 40);
+  font-family: Inter, sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn-large {
+  display: inline-flex;
+  min-height: 40px;
+  padding: 9.5px var(--semantic-xl, 24px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--semantic-xs, 8px);
+}
+
+.btn-regular {
+  display: inline-flex;
+  min-height: 36px;
+  padding: 7.5px var(--semantic-md, 16px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--semantic-xs, 8px);
+}
+
+.btn-small {
+  display: inline-flex;
+  min-height: 32px;
+  padding: 5.5px var(--absolute-3, 12px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--absolute-15, 6px);
+}
+
+.btn-mini {
+  display: inline-flex;
+  min-height: 24px;
+  padding: 3px var(--semantic-xs, 8px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--absolute-15, 6px);
+}
